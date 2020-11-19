@@ -20,6 +20,7 @@ public class SaludoController {
 		return "Hola Clase =) ";
 	}
 	
+
 	@GetMapping(value = "/saludo/otro")
 	public String saludoOtro() {
 		return " Otro saludo para la clase";
@@ -29,6 +30,7 @@ public class SaludoController {
 	public String guardarSaludo() {
 		return "Saludo guardado";
 	}
+	
 	
 	@PostMapping(value = "/saludo/otro")
 	public String guardarOtroSaludo(@RequestBody String pruebaSaludo) {
